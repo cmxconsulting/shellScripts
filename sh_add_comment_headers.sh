@@ -9,9 +9,6 @@
 # USAGE : 
 # ./sh_add_comments_headers.sh filename
 #
-# You can change the default variables AUTHOR, WEBSITE and COPYRIGHT_OWNER which
-# will be displayed in the generated output
-#
 # Copyright 2020 CMX Consulting
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,0 +1,113 @@
+000_CTR_RUN_TEST
+000_Master_Run_All_Test
+000_PART_RUN_TEST
+000_Run_ALL_STR_Test_2
+000_Run_ALL_Test_STR
+000_STR_Run DC QPA STR
+00_STR_Run DC QPA STR
+AOU_DemoRPS
+IRQ_CTR_DC_001-2 Créer un EPS avec entrée en gestion immédiate sans modèle d acte
+IRQ_CTR_DC_011104 MW A050541 - Editer une attestation de prêt sans impayé accès depuis un crédit
+IRQ_CTR_DC_012244 MW A170305 RA partiel immédiat ou rétroactif avec maintien de la durée
+IRQ_CTR_DC_CATACRE-101 - Accès à l application WEB Référentiel
+IRQ_CTR_DC_CATACRE-303 - Web Catalogue Consultation - Recherche Produit
+IRQ_CTR_DC_CTR MyVario A01 - Tester les connexions - Client personne morale
+IRQ_CTR_DC_CTR MyVario A02 - Tester les connexions - Client personne physique
+IRQ_CTR_DC_DEFI-PRO-00019-1bis - Création DEMANDE DE FINANCEMENT
+IRQ_CTR_DC_DEFI-PRO-00019-2bis - Création DEMANDE DE FINANCEMENT
+IRQ_CTR_DC_INTRANOR-01 Accès INTRANOR via poste bancaire
+IRQ_CTR_DC_MyVARIO- 104 affichage contrat de type CDD
+IRQ_CTR_VIC_DEFI-PRO-00019-1bis - Création DEMANDE DE FINANCEMENT
+IRQ_ENT_BPM_CCE MyWay-00205 - Avenant CCE - Autorisation découvert
+IRQ_ENT_CIC_DSC - Impression dossier client
+IRQ_ENT_MDP_CARTES-204 Avenant carte - consultation du profil niveau de service dérogatoire
+IRQ_IEM_ETC_DC-12 Vérification comptes courants dans synthèse DEI PART
+IRQ_PART _OCO_PROFCLI-011 Accès à la synthèse client personne physique
+IRQ_PART_BPP_O1- CONTRAT 1001 Souscrire Offre Confort Solo FAF client majeur mise en gestion et éditique
+IRQ_PART_BPP_O4-IARD-PART-315-Consulter un contrat Assurance sur compte
+IRQ_PART_DC_CDD-004 Clôture d un compte de dépôts simple pour un client particulier
+IRQ_PART_DC_CONTRAT 1002 Souscrire et Cloturer Offre Initial Solo FAF client majeur mise en gestion et éditique
+IRQ_PART_DC_CONTRAT 1003 Souscrire Offre Optimal Solo FAF client majeur mise en gestion et éditique
+IRQ_PART_DC_CONTRAT 1008 Avenant Offre Initial Solo FAF client majeur avec modif PS
+IRQ_PART_DC_CONTRAT 1018 Avenant Offre Confort famille
+IRQ_PART_DC_CONTRAT-1020 Changement offre BL vers Offre Initial Solo
+IRQ_PART_DC_I8- CONTRAT 1004-1019 Souscription et cloture Offre Initial Famille - 2 parents entités simples - pas d offre solo confort détenue
+IRQ_PART_DC_O1- CONTRAT 1001 Souscrire Offre Confort Solo FAF client majeur mise en gestion et éditique
+IRQ_PART_DC_O3- CONTRAT 1012 Changement offre Confort Solo vers offre unitaire CDD FAF client majeur
+IRQ_PART_PLC_PARTSOC Myway 21 Annuler une souscription de parts sociales à J
+IRQ_PART_PLC_TITRES Myway 300 - Extourner à J une ouverture de CTO profil BO
+IRQ_PART_XXXXXXX
+IRQ_STR_CAE_CONTELEC-00501 SAG-OPC Virement interne
+IRQ_STR_DC_CULTURNT-11 Accès à CultureNet
+IRQ_STR_DC_CULTURNT-11 Accès à CultureNet_2
+IRQ_STR_DC_STR NUM CRDU - Consultation image en GED_IRQ
+IRQ_STR_DC_STR NUM CRDU - Consultation image en GED_IRQ_2
+IRQ_STR_DC_STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED
+IRQ_STR_DC_STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED_2
+IRQ_STR_DC_STR PDT Accès PCM Ma journée_IRQ
+IRQ_STR_DC_STR PDT Accès PCM Ma journée_IRQ_2
+IRQ_STR_DC_STR PDT BMM- Accès BMM - Accès onglets
+IRQ_STR_DC_STR PDT BMM- Accès BMM - Accès onglets_2
+IRQ_STR_DC_STR PDT Iconisation générale
+IRQ_STR_DC_STR PDT Iconisation générale_2
+IRQ_STR_DC_STR PDT IE - accès à un site Web externe
+IRQ_STR_DC_STR PDT IE - accès à un site Web externe_2
+IRQ_STR_DC_STR PDT Lancement des trx depuis PCM
+IRQ_STR_DC_STR PDT Lancement des trx depuis PCM_2
+IRQ_STR_DC_STR PDT Rééidition de documents
+IRQ_STR_DC_STR PDT Rééidition de documents_2
+IRQ_STR_NAR_STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED
+QPA_CTR_DC_001-2 Créer un EPS avec entrée en gestion immédiate sans modèle d acte
+QPA_CTR_DC_011104 MW A050541 - Editer une attestation de prêt sans impayé accès depuis un crédit
+QPA_CTR_DC_012244 MW A170305 RA partiel immédiat ou rétroactif avec maintien de la durée
+QPA_CTR_DC_CATACRE-101 - Accès à l application WEB Référentiel
+QPA_CTR_DC_CATACRE-303 - Web Catalogue Consultation - Recherche Produit
+QPA_CTR_DC_CTR MyVario A01 - Tester les connexions - Client personne morale
+QPA_CTR_DC_CTR MyVario A02 - Tester les connexions - Client personne physique
+QPA_CTR_DC_CTR MyVario A03 - Effectuer des paiements sur crédit
+QPA_CTR_DC_CTR SDPI-321 Rechercher une fiche dossier à partir du nom du partenaire
+QPA_CTR_DC_DEFI-PRO-00019-1bis - Création DEMANDE DE FINANCEMENT
+QPA_CTR_DC_DEFI-PRO-00019-2bis - Création DEMANDE DE FINANCEMENT
+QPA_CTR_DC_INTRANOR-01 Accès INTRANOR via poste bancaire
+QPA_CTR_DC_IZIVENTE-0102 Accès Calculatrice
+QPA_CTR_DC_IZIVENTE-0105 Accès Gestion des anomalies
+QPA_CTR_DC_MyVARIO- 104 affichage contrat de type CDD
+QPA_CTR_DC_SMAC-0101 Accès SMAC V2 via le portail
+QPA_PART_DC_CDD-004 Clôture d un compte de dépôts simple pour un client particulier
+QPA_PART_DC_CONTRAT 1002 Souscrire et Cloturer Offre Initial Solo FAF client majeur mise en gestion et éditique
+QPA_PART_DC_CONTRAT 1003 Souscrire Offre Optimal Solo FAF client majeur mise en gestion et éditique
+QPA_PART_DC_CONTRAT 1008 Avenant Offre Initial Solo FAF client majeur avec modif PS
+QPA_PART_DC_CONTRAT 1018 Avenant Offre Confort famille
+QPA_PART_DC_CONTRAT-1020 Changement offre BL vers Offre Initial Solo
+QPA_PART_DC_I8- CONTRAT 1004-1019 Souscription et cloture Offre Initial Famille - 2 parents entités simples - pas d offre solo confort détenue
+QPA_PART_DC_O1- CONTRAT 1001 Souscrire Offre Confort Solo FAF client majeur mise en gestion et éditique
+QPA_PART_DC_O3- CONTRAT 1012 Changement offre Confort Solo vers offre unitaire CDD FAF client majeur
+QPA_REC_CTR_DEFI PRO 00019-1bis - Création DEMANDE DE FINANCEMENT
+QPA_REC_ENT_CARTES-204 Avenant carte - consultation du profil niveau de service dérogatoire
+QPA_REC_ENT_CCE MyWay-00205 - Avenant CCE - Autorisation découvert
+QPA_REC_ENT_DSC - Impression dossier client
+QPA_REC_IEM_DC-12 Vérification comptes courants dans synthèse DEI PART
+QPA_REC_PART_O1- CONTRAT 1001 Souscrire Offre Confort Solo FAF client majeur mise en gestion et éditique
+QPA_REC_PART_O4 IARD PART 315-Consulter un contrat Assurance sur compte
+QPA_REC_PART_PROFCLI-011 Accès à la synthèse client personne physique
+QPA_REC_PART_TITRES Myway 300 - Extourner à J une ouverture de CTO profil BO
+QPA_REC_STR_ STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED
+QPA_REC_STR_CONTELEC-00501 SAG-OPC Virement interne
+QPA_STR_DC_2_CULTURNT-11 Accès à CultureNet
+QPA_STR_DC_2_STR NUM CRDU - Consultation image en GED_QPA
+QPA_STR_DC_2_STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED
+QPA_STR_DC_2_STR PDT Accès PCM Ma journée_QPA
+QPA_STR_DC_2_STR PDT BMM- Accès BMM - Accès onglets
+QPA_STR_DC_2_STR PDT Iconisation générale
+QPA_STR_DC_2_STR PDT IE - accès à un site Web externe
+QPA_STR_DC_2_STR PDT Lancement des trx depuis PCM
+QPA_STR_DC_2_STR PDT Rééidition de documents
+QPA_STR_DC_CULTURNT-11 Accès à CultureNet
+QPA_STR_DC_STR NUM CRDU - Consultation image en GED_QPA
+QPA_STR_DC_STR NUM PDC Plan de Classement - Contrôler les onglets et visualiser un doc en GED
+QPA_STR_DC_STR PDT Accès PCM Ma journée_QPA
+QPA_STR_DC_STR PDT BMM- Accès BMM - Accès onglets
+QPA_STR_DC_STR PDT Iconisation générale
+QPA_STR_DC_STR PDT IE - accès à un site Web externe
+QPA_STR_DC_STR PDT Lancement des trx depuis PCM
+QPA_STR_DC_STR PDT Rééidition de documents

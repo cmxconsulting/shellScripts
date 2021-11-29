@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# SCRIPT: git_delete_branch.sh
+# SCRIPT: jenkins_job_import.sh
 # AUTHOR: Christophe MICHAUX <chris@cmxconsulting.fr>
-# CREATION DATE : 2020-10-07
+# CREATION DATE : 2021-11-10
 # WEBSITE : https://www.cmxconsulting.fr
 #
-# DESCRIPTION : Delete a git branch, locally and on remote repository.
+# DESCRIPTION : Import Jobs to Jenkins from XML files
 #
-# Copyright 2020 CMX Consulting
+# Copyright 2021 CMX Consulting
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,24 +29,36 @@ CGREEN='\033[1;32m'
 CCYAN='\033[1;36m'
 CNC='\033[0m' # No Color
 
-echo "Delete a git branch, locally and on remote repository."
+echo "Import Jenkins jobs from XML files."
 echo " "
 display_usage() { 
     echo " "
     echo "Usage:"
-    echo "    $CGREEN $0 [options] GIT_BRANCH"
+    echo "    $CGREEN $0 [options] JENKINS_URL"
     echo $CNC
     echo "Arguments : "
     echo "  -h : display this message"
-    echo "  GIT_BRANCH : the branch to delete" 
+    echo "  -u : user name"
+    echo "  -j : job prefix"
+    echo "  JENKINS_URL : the Jenkins' URL" 
     echo " "
 } 
+USERNAME=""
+JOB_PREFIX="TNRA/"
 
-while getopts ":h" opt; do
+while getopts ":h:u:j:" opt; do
   case ${opt} in
     h )
       display_usage
       exit 0
+      ;;
+    u )
+      USERNAME=$OPTARG
+      echo "Username : $USERNAME"
+      ;;
+    j )
+      JOB_PREFIX=$OPTARG
+      echo "Job prefix : $JOB_PREFIX"
       ;;
     \? )
       echo $CRED
@@ -58,10 +70,23 @@ while getopts ":h" opt; do
 done
 shift $((OPTIND -1))
 
-BRANCH=$1
+#JENKINS_URL=http://picjkm011.dom101.mapres:8080/
+JENKINS_URL=$1
+
+if [ -n "$USERNAME" ]; then
+	# Prompt for password
+	read -s -p "Please set username $USERNAME password : " ACCOUNT_PASSWORD
+	
+	if [ -z "$ACCOUNT_PASSWORD" ]; then
+
+		echo "${CRED}Error : Password not set$CNC"
+		exit 4
+	fi
+fi
+
 
 # if less than two arguments supplied, display usage 
-if [  $# -gt 1 ] 
+if [  $# -gt 1 ]
 then 
 	echo "${CRED}Error : Too much arguments ($#)$CNC"
     
@@ -71,28 +96,40 @@ fi
 
 
 # Checks if file exists
-if [ -z "$BRANCH" ]; then
+if [ -z "$JENKINS_URL" ]; then
     echo $CRED
-    echo "Branch not specified. Please choose an existing branch and try again"
+    echo "Jenkins URL not specified. Please pass the JENKINS url as argument."
     echo $CNC
     display_usage
     exit 3
 fi
 
-echo "Ask to remove git branch : ${CRED}${BRANCH}${CNC}"
 
+JENKINS_AUTHENTICATION=""
+if [ -n "$USERNAME" ]; then
 
-echo $CRED
-echo "Be carreful, this operation cannot be undone."
-read -p "Do you really want to remove branch $1 ? (Y/n)" -n 1 -r
-echo $CNC
-
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-
-    git branch -D $1
-    git push origin :$1 --no-verify
+	JENKINS_AUTHENTICATION="-auth $USERNAME:$ACCOUNT_PASSWORD"
 fi
+JOBS_FOLDER=jenkins_jobs_output
+
+CURRENT_FOLDER=$(pwd)
+
+
+cd $JOBS_FOLDER
+JOBS_COUNT=`ls *.xml | wc -l | xargs`
+j = 0
+echo "$JOBS_COUNT jobs found to import in Jenkins $JENKINS_URL"
+
+for f in *.xml;
+do
+	let j++
+	printf -v JOB_NUMBER "%03d" $j
+	echo "Importing (${CCYAN}$JOB_NUMBER${CNC} / $JOBS_COUNT) ${CCYAN}${f%.*}${CNC} jenkins job...";
+	java -jar $CURRENT_FOLDER/jenkins-cli.jar  -s ${JENKINS_URL} ${JENKINS_AUTHENTICATION}   create-job "${JOB_PREFIX}${f%.*}" < "$f"
+
+done
+
+cd $CURRENT_FOLDER
 
 
 echo " "
@@ -101,5 +138,4 @@ echo " "
 echo "If you are searching for other useful scripts, be free to go to https://github.com/cmxconsulting/"
 echo " "
 echo "End."
-
 
